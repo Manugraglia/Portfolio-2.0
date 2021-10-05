@@ -10,7 +10,7 @@ export default function Skill() {
           <h2 id="aboutme">About me</h2>
           <div className={skill.imgen}>
             <img src="fot1.png" />
-            <div>
+            <div className={skill.submain}>
               <h3>Manuel Graglia</h3>
               <p>
                 Since i decided to start my journey as Front-end Developer, i

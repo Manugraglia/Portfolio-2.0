@@ -51,8 +51,10 @@ export default function Formulario() {
           <div className={formulario.cardcontact}>
             <h1>Contact</h1>
             <div className={formulario.icon}>
-              <i className="fas fa-phone-square-alt">+54 3412562918</i>
-              <i className="fab fa-github-square">
+              <i aria-hidden className="fas fa-phone-square-alt">
+                +54 3412562918
+              </i>
+              <i aria-hidden className="fab fa-github-square">
                 <a
                   href="https://github.com/Manugraglia?tab=repositories"
                   target="_blank"
@@ -61,7 +63,7 @@ export default function Formulario() {
                 </a>
               </i>
 
-              <i className="fab fa-linkedin">
+              <i aria-hidden className="fab fa-linkedin">
                 <a
                   href="https://www.linkedin.com/in/manuel-graglia-0a8a3320a/"
                   target="_blank"

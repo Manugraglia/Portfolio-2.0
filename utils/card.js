@@ -8,6 +8,13 @@ const useStyle = makeStyles({
     textAlign: "center",
     background: "#00000",
     height: "418px",
+    "@media screen and (max-width:960px)": {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "start",
+      alignItems: "center",
+      height: "30%",
+    },
   },
   content: {
     display: "flex",
@@ -16,7 +23,9 @@ const useStyle = makeStyles({
     borderRadius: "24px",
     padding: "20px",
     color: "white",
-
+    "@media screen and (max-width:770px)": {
+      marginBottom: "20px",
+    },
     width: "310px",
     background: "#272525",
     "& h3": {

@@ -2,12 +2,18 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyle = makeStyles({
   container: {
+    display: "flex",
     marginBottom: "5%",
     background: "#000000",
   },
   principal: {
     background: "#000000",
     margin: "0 100px",
+    "@media screen and (max-width:960px)": {
+      display: "flex",
+      flexDirection: "column",
+      margin: "0",
+    },
     " & h2 ": {
       textDecoration: "underline",
       display: "flex",
@@ -21,6 +27,10 @@ const useStyle = makeStyles({
       margin: "20px",
       display: "flex",
       justifyContent: "center",
+      "@media screen and (max-width:960px)": {
+        display: "flex",
+        textAlign: "center",
+      },
     },
     " & p ": {
       color: "white",
@@ -28,8 +38,14 @@ const useStyle = makeStyles({
       textAlign: "-webkit-center",
     },
   },
+  submain: {
+    "@media screen and (max-width:960px)": {
+      display: "flex",
+      flexDirection: "column",
+    },
+  },
   imgen: {
-    "@media screen and (max-width:720px)": {
+    "@media screen and (max-width:960px)": {
       display: "flex",
       flexDirection: "column",
     },

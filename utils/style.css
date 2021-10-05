@@ -13,12 +13,6 @@ body {
     padding-bottom: 400px
 }
 
-@media screen and (max-width: 710px) {
-    .body {
-        margin: 0 0 0 0;
-    }
-}
-
 .body {
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +20,13 @@ body {
     align-items: center;
     min-height: 50vh;
     margin: 10px 0;
+}
+@media screen and (max-width: 960px) {
+    .body {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .skill {
@@ -158,12 +159,28 @@ svg circle {
     margin-right: 15px;
     font-weight: 400;
 }
+@media screen and (max-width: 960px) {
+    .wrapper .static-txt {
+       width: 100%;
+       margin-right: 0;
+    }
+}
 
 .wrapper .dynamic-txts {
     margin-left: 3px;
     height: 48px;
     line-height: 48px;
     overflow: hidden;
+}
+@media screen and (max-width: 960px) {
+    .wrapper .dynamic-txts {
+        margin-left: -40%;
+    }
+}
+@media screen and (max-width: 380px) {
+    .wrapper .dynamic-txts {
+        margin-left: -15%;
+    }
 }
 
 .dynamic-txts li {

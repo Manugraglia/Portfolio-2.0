@@ -128,7 +128,7 @@ const useStyles = makeStyles({
       width: "100%",
       height: "70vh",
       position: "absolute",
-      top: "100px",
+      top: "70px",
       left: "-100%",
       opacity: "1",
       transition: "all 0.5s ease",

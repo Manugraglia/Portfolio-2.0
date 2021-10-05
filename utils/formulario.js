@@ -12,6 +12,9 @@ const useStyle = makeStyles({
     padding: "30px",
     borderRadius: "15px",
     color: "white",
+    "@media screen and (max-width:770px)": {
+      marginBottom: "20px",
+    },
   },
   icon: {
     display: "flex",
@@ -34,6 +37,11 @@ const useStyle = makeStyles({
     width: "100%",
     height: "100%",
     padding: "30px",
+    "@media screen and (max-width:960px)": {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+    },
   },
   register: {
     background: "#272525",
@@ -41,6 +49,10 @@ const useStyle = makeStyles({
     width: "70%",
     borderRadius: "70px",
     color: "white",
+    "@media screen and (max-width:770px)": {
+      borderRadius: "15px",
+      width: "auto",
+    },
   },
   boton: {
     display: "flex",
@@ -65,6 +77,9 @@ const useStyle = makeStyles({
     color: "#fff",
     margin: "16px 0",
     fontSize: "16px",
+    "@media screen and (max-width:770px)": {
+      width: "70%",
+    },
   },
   mensaje: {
     borderRadius: "15px",

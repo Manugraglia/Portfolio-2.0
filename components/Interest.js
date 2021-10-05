@@ -14,19 +14,19 @@ export default function Interest() {
   return (
     <div className={interest.icon}>
       <div>
-        <i className="fas fa-futbol"></i>
+        <i aria-hidden className="fas fa-futbol"></i>
         <p>Football</p>
       </div>
       <div>
-        <i className="fas fa-running"></i>
+        <i aria-hidden className="fas fa-running"></i>
         <p>Running</p>
       </div>
       <div>
-        <i className="fas fa-laptop"></i>
+        <i aria-hidden className="fas fa-laptop"></i>
         <p>Programming</p>
       </div>
       <div>
-        <i className="fas fa-plane-departure"></i>
+        <i aria-hidden className="fas fa-plane-departure"></i>
         <p>Traveling</p>
       </div>
     </div>

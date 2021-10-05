@@ -3,9 +3,28 @@ import { makeStyles } from "@material-ui/core";
 const useStyle = makeStyles({
   content: {
     width: "100%",
-    height: "88vh",
     display: "flex",
     fontFamily: "Alfa Slab One",
+    "@media screen and (max-width:960px)": {
+      display: "flex",
+      flexDirection: "column",
+      textAlign: "center",
+    },
+    "@media screen and (max-width:360px)": {
+      display: "flex",
+      flexDirection: "column",
+      textAlign: "center",
+    },
+    "@media screen and (max-width:325px)": {
+      display: "flex",
+      flexDirection: "column",
+      textAlign: "center",
+    },
+    "@media screen and (max-width:415px)": {
+      display: "flex",
+      flexDirection: "column",
+      textAlign: "center",
+    },
   },
   h1: {
     fontFamily: "Alfa Slab One",
@@ -18,6 +37,10 @@ const useStyle = makeStyles({
     justifyContent: "center",
     width: "50%",
     fontSize: "30px",
+    "@media screen and (max-width:960px)": {
+      margin: "0",
+      width: "100%",
+    },
   },
   button: {
     textDecoration: "none",
@@ -70,21 +93,18 @@ const useStyle = makeStyles({
     height: "100%",
     display: "flex",
     alignItems: "flex-end",
-    "@media screen and (max-width:768px)": {
+    "@media screen and (max-width:960px)": {
       width: "50%",
       height: "100%",
+      display: "none",
     },
     width: "50%",
     height: "100%",
   },
   img: {
-    "@media screen and (max-width: 1024px)": {},
-    "@media screen and (max-width:768px)": {
+    "@media screen and (max-width:960px)": {
       width: "90%",
       height: "90%",
-    },
-    "@media screen and (max-width:720px)": {
-      display: "none",
     },
 
     width: "100%",
